@@ -6,3 +6,7 @@ h1 {
 .first_class{
   color: darkmagenta;
 }
+
+form{
+  background-color: teal;
+}

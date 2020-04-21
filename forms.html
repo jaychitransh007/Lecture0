@@ -3,13 +3,45 @@
   <head>
     <meta charset="utf-8">
     <title></title>
+    <style media="screen">
+      input[type="text"]{
+        background-color: indigo;
+      }
+      input[type="number"]{
+        background-color: blue;
+      }
+      input[type="password"]{
+        background-color: black;
+      }
+      button{
+        width: 200px;
+        height: 50px;
+        font-size: 24px;
+        background-color: black;
+        font-weight: bold;
+        border: 2px;
+      }
+      button:hover{
+        background-color: white;
+      }
+      h4::before{
+        content: "\21d2 Click here: ";
+        font-weight: bold;
+      }
+      p::selection{
+        background-color: yellow;
+      }
+
+    </style>
   </head>
   <body>
     <h1>My Forms Page</h1>
     <form class="" action="index.html" method="post">
       <div class="">
         <h5>Login using Password</h5>
-        <input type="text" name="name", placeholder="Username">
+        <input type="text" name="name", placeholder="First Name">
+        <input type="text" name="name", placeholder="Last Name">
+        <input type="text" name="number", placeholder="Mobile">
         <input type="password" name="password", placeholder="Password">
       </div>
       <div class="">
@@ -20,6 +52,7 @@
         <input type="radio" name="color" value="Blue">Blue
       </div>
       <div class="">
+        <p>Your Interests</p>
         <h5>Favorite Asian Cricket Team</h5>
         <input name="country" list="countries", placeholder="Country">
         <datalist id="countries">
@@ -30,6 +63,10 @@
           <option value="Afganistan"></option>
           <option value="Others"></option>
         </datalist>
+      </div>
+      <div class="">
+        <h4>Most Useless Button</h4>
+        <button type="button" name="button">Click Me!</button>
       </div>
     </form>
   </body>

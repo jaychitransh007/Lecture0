@@ -39,3 +39,21 @@ th {
 .name{
   text-decoration: underline;
 }
+
+@media print{
+  #bottom{
+    display: none
+  }
+}
+
+@media (min-width: 500px) {
+  body{
+    background-color: cyan;
+  }
+}
+
+@media (max-width: 499px) {
+  body{
+    background-color: yellow;
+  }
+}

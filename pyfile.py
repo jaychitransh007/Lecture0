@@ -1,10 +1,5 @@
-import name
+from name import greet, square
 
-name = input("Your Name: ")
-name.greet(name)
-
-def square(x):
-    return x*x
-
-for i in range(5):
-    print(i, "square: ", square(i))
+nm = input("Your Name: ")
+greet(nm)
+print(square(10))
